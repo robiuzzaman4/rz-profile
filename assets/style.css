@@ -1,0 +1,172 @@
+:root {
+    --base: hsl(240, 33%, 99%);
+    --interface: hsl(240, 12%, 88%);
+    --overlay: hsl(230, 18%, 81%);
+    --text-primary: hsl(233, 21%, 16%);
+    --text-secondary:hsl(233, 14%, 25%);
+    --violet: hsl(255, 61%, 64%);
+    --themebtncolor: hsl(233, 29%, 12%);
+}
+/* for darkmode */
+.darkmode {
+    --base: hsl(233, 29%, 12%);
+    --interface: hsl(233, 20%, 17%);
+    --overlay: hsl(233, 16%, 20%);
+    --violet: hsl(255, 92%, 76%);
+    --text-primary: hsl(233, 33%, 90%);
+    --text-secondary: hsl(233, 7%, 65%);
+    --themebtncolor: hsl(255, 92%, 76%);
+}
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: var(--base);
+    color: var(--text-primary);
+}
+header {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+#toggle {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: var(--themebtncolor);
+    background-color: transparent;
+    border: .12em solid var(--themebtncolor);
+    padding: .1em .3em;
+    border-radius: .2em;
+}
+.profile {
+    min-height: 30em;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.profile-info .picture img {
+    width: 6em;
+    border-radius: 50%;
+    outline: .2em solid var(--violet);
+    outline-offset: .2em;
+}
+.profile-info .name-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-info .name-bio h2 {
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+.profile-info .name-bio h3 {
+    text-transform: capitalize;
+    font-size: .9em;
+    color: var(--text-secondary);
+}
+.profile-info .social {
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+.profile-info .social a {
+    font-size: 1.25em;
+    color: var(--text-primary);
+}
+.profile-info .social a:hover {
+    color: var(--violet);
+}
+.profile-description {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.description-1,
+.description-2,
+.description-3 {
+    text-align: center;
+}
+.description-1 h3,
+.description-2 h3,
+.description-3 h3 {
+    text-transform: capitalize;
+    font-size: 1.25em;
+}
+.description-1 p,
+.description-2 p,
+.description-3 p {
+    text-transform: capitalize;
+    font-size: .9em;
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.buttons .cvbtn {
+    text-transform: capitalize;
+    color: var(--interface);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .9em;
+    background-color: var(--violet);
+    padding: .8em 1.5em;
+    border-radius: .5em;
+}
+.buttons .cvbtn:hover {
+    transform: scale(.95);
+}
+.message-btn {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.btn {
+    padding: .4em .7em;
+    background-color: var(--interface);
+    font-size: 1.2em;
+    border-radius: .5em;
+    color: var(--dark-text);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.btn:hover {
+    color: var(--violet);
+}
+.btn-messenger {
+    padding: .4em .62em;
+}
+.Curtesy {
+    text-transform: capitalize;
+    font-size: .9em;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin: 1em 0em 1em 0em;
+}
+.Curtesy a {
+    color: var(--violet);
+}
