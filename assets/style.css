@@ -37,7 +37,6 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
 }
 #toggle {
     position: absolute;
@@ -65,11 +64,18 @@ header {
     align-items: center;
     gap: 1em;
 }
+.profile-info .picture-circle {
+    height: 6.8em;
+    width: 6.8em;
+    border: .2em solid var(--violet);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .profile-info .picture img {
     width: 6em;
     border-radius: 50%;
-    outline: .2em solid var(--violet);
-    outline-offset: .2em;
 }
 .profile-info .name-bio {
     display: flex;
@@ -88,7 +94,7 @@ header {
 .profile-info .social {
     display: flex;
     align-items: center;
-    gap: .8em;
+    gap: 1em;
 }
 .profile-info .social a {
     font-size: 1.25em;
@@ -135,7 +141,7 @@ header {
     font-weight: 500;
     font-size: .9em;
     background-color: var(--violet);
-    padding: .8em 1.5em;
+    padding: .8em 1.3em;
     border-radius: .5em;
 }
 .buttons .cvbtn:hover {
@@ -144,7 +150,7 @@ header {
 .message-btn {
     display: flex;
     align-items: center;
-    gap: .5em;
+    gap: 1em;
 }
 .btn {
     padding: .4em .7em;
