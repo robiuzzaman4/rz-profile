@@ -94,11 +94,11 @@ header {
 .profile-info .social {
     display: flex;
     align-items: center;
-    gap: 1em;
 }
 .profile-info .social a {
     font-size: 1.25em;
     color: var(--text-primary);
+    padding: 0em .5em;
 }
 .profile-info .social a:hover {
     color: var(--violet);
@@ -147,11 +147,11 @@ header {
 .buttons .cvbtn:hover {
     transform: scale(.95);
 }
-.message-btn {
+/* .message-btn {
     display: flex;
     align-items: center;
     gap: 1em;
-}
+} */
 .btn {
     padding: .4em .7em;
     background-color: var(--interface);
@@ -175,4 +175,7 @@ header {
 }
 .Curtesy a {
     color: var(--violet);
+}
+@media screen and (max-width: 600px) {
+    
 }
