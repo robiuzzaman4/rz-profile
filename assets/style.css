@@ -62,7 +62,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
 }
 .profile-info .picture-circle {
     height: 6.8em;
@@ -81,6 +81,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -1em;
 }
 .profile-info .name-bio h2 {
     text-transform: capitalize;
@@ -147,11 +148,6 @@ header {
 .buttons .cvbtn:hover {
     transform: scale(.95);
 }
-/* .message-btn {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-} */
 .btn {
     padding: .4em .7em;
     background-color: var(--interface);
@@ -175,7 +171,4 @@ header {
 }
 .Curtesy a {
     color: var(--violet);
-}
-@media screen and (max-width: 600px) {
-    
 }
