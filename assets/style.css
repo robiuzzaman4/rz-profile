@@ -8,6 +8,10 @@
     --themebtncolor: hsl(233, 29%, 12%);
 }
 /* for darkmode */
+::selection {
+    background-color: var(--violet);
+    color: var(--text-primary);
+}
 .darkmode {
     --base: hsl(233, 29%, 12%);
     --interface: hsl(233, 20%, 17%);
@@ -173,6 +177,6 @@ header {
 }
 @media screen and (max-width:600px) {
     .profile-info {
-        gap: 1.5em;
+        gap: 1.8em;
     }
 }
