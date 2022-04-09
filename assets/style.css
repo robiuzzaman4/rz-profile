@@ -62,7 +62,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
 }
 .profile-info .picture-circle {
     height: 6.8em;
@@ -81,7 +81,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -1em;
 }
 .profile-info .name-bio h2 {
     text-transform: capitalize;
@@ -171,4 +170,9 @@ header {
 }
 .Curtesy a {
     color: var(--violet);
+}
+@media screen and (max-width:600px) {
+    .profile-info {
+        gap: 1.5em;
+    }
 }
